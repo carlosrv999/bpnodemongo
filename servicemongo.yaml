@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: mongo
+  name: mongo1553643398
+  selfLink: /api/v1/namespaces/default/services/mongo-deployment
+spec:
+  externalTrafficPolicy: Cluster
+  ports:
+  - port: 27017
+    protocol: TCP
+    targetPort: 27017
+  selector:
+    app: mongo
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}
