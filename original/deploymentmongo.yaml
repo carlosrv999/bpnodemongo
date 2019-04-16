@@ -6,16 +6,16 @@ metadata:
   creationTimestamp: null
   generation: 1
   labels:
-    app: carlos
-  name: mongodep1555458551
-  selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/mongodep1555458551
+    app: bpnodemongo
+  name: mongo-deployment
+  selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/mongo-deployment
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      app: carlos
+      app: bpnodemongo
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -25,7 +25,7 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: carlos
+        app: bpnodemongo
     spec:
       containers:
       - image: 100.125.0.23:6443/carlos.ramirezv/mongoalpine:3.6

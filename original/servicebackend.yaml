@@ -3,9 +3,9 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: carlos
-  name: backendsrv1555458551
-  selfLink: /api/v1/namespaces/default/services/backendsrv1555458551
+    app: bpnodemongo
+  name: backend
+  selfLink: /api/v1/namespaces/default/services/backend-service
 spec:
   externalTrafficPolicy: Cluster
   ports:
@@ -13,7 +13,7 @@ spec:
     protocol: TCP
     targetPort: 3000
   selector:
-    app: carlos
+    app: bpnodemongo
   sessionAffinity: None
   type: NodePort
 status:

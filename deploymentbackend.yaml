@@ -6,16 +6,16 @@ metadata:
   creationTimestamp: null
   generation: 1
   labels:
-    app: mongo
-  name: backend-deployment
-  selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/backend-deployment
+    app: carlos
+  name: backenddep1555458551
+  selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/backenddep1555458551
 spec:
   progressDeadlineSeconds: 600
-  replicas: 1
+  replicas: 5
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      app: mongo
+      app: carlos
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -25,15 +25,15 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: mongo
+        app: carlos
     spec:
       containers:
-      - image: 100.125.0.23:6443/carlos.ramirezv/bpnodemongo:1.0
+      - image: 100.125.0.23:6443/carlos.ramirezv/bpnodemongo:latest
         imagePullPolicy: Always
         name: backend
         env:
         - name: MONGODB_HOST
-          value: "mongo1553643398"
+          value: "mongo1555458551"
         ports:
         - containerPort: 3000
           protocol: TCP
