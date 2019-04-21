@@ -3,16 +3,16 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: carlos
-  name: mongo1555458551
-  selfLink: /api/v1/namespaces/default/services/mongo-dp1555458551
+    app: carlosrv
+  name: mongo1555866905
+  selfLink: /api/v1/namespaces/default/services/mongo-dp1555866905
 spec:
   ports:
   - port: 27017
     protocol: TCP
     targetPort: 27017
   selector:
-    app: carlos
+    app: carlosrv
   sessionAffinity: None
   type: ClusterIP
 status:

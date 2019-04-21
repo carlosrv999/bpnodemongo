@@ -129,6 +129,8 @@ spec:
         env:
         - name: MONGODB_HOST
           value: "mongo$datesec"
+        - name: NM_APP_NAME
+          value: "$appname"
         ports:
         - containerPort: 3000
           protocol: TCP
