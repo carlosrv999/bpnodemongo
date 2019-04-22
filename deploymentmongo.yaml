@@ -6,16 +6,16 @@ metadata:
   creationTimestamp: null
   generation: 1
   labels:
-    app: carlosrv
-  name: mongodep1555866905
-  selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/mongodep1555866905
+    app: carlosrv55
+  name: mongodep1555869579
+  selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/mongodep1555869579
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      app: carlosrv
+      app: carlosrv55
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -25,7 +25,7 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: carlosrv
+        app: carlosrv55
     spec:
       containers:
       - image: 100.125.0.23:6443/carlos.ramirezv/mongoalpine:3.6

@@ -123,7 +123,7 @@ spec:
         app: $appname
     spec:
       containers:
-      - image: 100.125.0.23:6443/carlos.ramirezv/bpnodemongo:latest
+      - image: 100.125.0.23:6443/carlos.ramirezv/$appname:latest
         imagePullPolicy: Always
         name: backend
         env:

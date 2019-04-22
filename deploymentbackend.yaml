@@ -6,16 +6,16 @@ metadata:
   creationTimestamp: null
   generation: 1
   labels:
-    app: carlosrv
-  name: backenddep1555866905
-  selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/backenddep1555866905
+    app: carlosrv55
+  name: backenddep1555869579
+  selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/backenddep1555869579
 spec:
   progressDeadlineSeconds: 600
-  replicas: 3
+  replicas: 4
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      app: carlosrv
+      app: carlosrv55
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -25,17 +25,17 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: carlosrv
+        app: carlosrv55
     spec:
       containers:
-      - image: 100.125.0.23:6443/carlos.ramirezv/bpnodemongo:latest
+      - image: 100.125.0.23:6443/carlos.ramirezv/carlosrv55:latest
         imagePullPolicy: Always
         name: backend
         env:
         - name: MONGODB_HOST
-          value: "mongo1555866905"
+          value: "mongo1555869579"
         - name: NM_APP_NAME
-          value: "carlosrv"
+          value: "carlosrv55"
         ports:
         - containerPort: 3000
           protocol: TCP

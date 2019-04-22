@@ -3,9 +3,9 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: carlosrv
-  name: backendsrv1555866905
-  selfLink: /api/v1/namespaces/default/services/backendsrv1555866905
+    app: carlosrv55
+  name: backendsrv1555869579
+  selfLink: /api/v1/namespaces/default/services/backendsrv1555869579
 spec:
   externalTrafficPolicy: Cluster
   ports:
@@ -13,7 +13,7 @@ spec:
     protocol: TCP
     targetPort: 3000
   selector:
-    app: carlosrv
+    app: carlosrv55
   sessionAffinity: None
   type: NodePort
 status:
